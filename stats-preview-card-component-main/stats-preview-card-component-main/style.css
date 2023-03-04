@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Overpass', sans-serif;
+    min-height:100vh ;
+    background-color: hsl(233, 47%, 7%);
+    font-size: 15px;
+    min-width: 420px;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.container{
+    background-color: hsl(244, 38%, 16%);
+    max-width: 375px;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    
+
+}
+.img{
+    position: relative;
+    
+}
+.img::after{
+    position: absolute;
+    content: "";
+    height: 98%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: hwb(277 5% 44%);
+    opacity: 0.5;
+    
+
+}
+
+.heading{
+    color: white;
+    padding: 20px 40px;
+}
+.p1{
+    padding:10px 20px;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+h3{
+    color: white;
+}
+.insight{
+    color:hsl(277, 64%, 61%);
+}
+
+.p2{
+    padding: 3px;
+    margin-bottom: 15px;
+    font-size: 10px;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+@media only screen and (min-width:500px) {
+.heading{
+    padding: 0px;
+}
+img {
+    width: 100%;
+}
+.others{
+    padding: 0px;
+    flex-direction: row;
+}
+.container{
+    display: flex;
+    flex-direction: row-reverse;
+    
+    max-width: 1000px;
+
+}
+.img::after{
+    height: 100%;
+   
+}
+
+.text{
+    width: 52%;
+    padding: 5px 30px;
+}
+.heading{
+    padding: 10px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+
+.others{
+    position: relative;
+    top: 50px;
+    right: 18px;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    
+}
+
+h1{
+    margin-left: 0px;
+    padding: 0 16px;
+    padding-top: 40px;
+}
+
+
+
+}
